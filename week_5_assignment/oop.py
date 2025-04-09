@@ -7,16 +7,16 @@ class phone:
 
     def ring(self):
         print("The Phone is Ringing...")
-    
-    def notification(self):
-        print("A new notification is available...")
 
+    def va(self):
+        return "Hey Google"
+    
 # Create the object
-phone = phone()
+phone1= phone()
 print(phone.os)
 print(phone.name)
 print(phone.type)
-phone.ring()
+phone1.ring()
 
 
 class apple:
@@ -25,25 +25,25 @@ class apple:
         self.color = color
         self.model = model
         self.year = year
-    
-    def notification(self):
-        return "You have a new notification"
-        
 
-    
+    def va(self):
+        return "Hey Siri"
+  
 apple1 =apple("blue", "Macbook", "2015")
 apple2 = apple("Red", "Ipad", "2010")
 
 print(apple1.color)
 
-class phone(apple):
+class Smartphone(apple):
     pass
 
-phone1 = phone("navy", "15promax", "2024")
+phone2 = Smartphone("navy", "15promax", "2024")
 
-print(phone1.model)
+print(phone2.model)
 
-#polymorphism in action
+assist = [phone1,phone2, apple1]
 
-for message in [apple1.notification(), apple2.notification(), phone1.notification()]:
-    print(message)
+for assistance in assist:
+    print(assistance.va())
+
+# Assignment 2: Create a Class with Methods
