@@ -45,5 +45,3 @@ assist = [phone1,phone2, apple1]
 
 for assistance in assist:
     print(assistance.va())
-
-# Assignment 2: Create a Class with Methods
